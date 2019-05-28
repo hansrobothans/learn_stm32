@@ -30,3 +30,5 @@
 .\objects\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\objects\main.o: ..\User\led\midd_led.h
 .\objects\main.o: ..\User\delay\midd_delay.h
+.\objects\main.o: ..\User\usart\midd_usart.h
+.\objects\main.o: E:\Programe File\ARM\ARMCC\Bin\..\include\stdio.h
