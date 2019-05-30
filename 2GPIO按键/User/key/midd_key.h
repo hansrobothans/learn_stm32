@@ -7,9 +7,9 @@
 #define KEY_ON 1
 #define KEY_OFF 0
 
-#define KEY1_G_GPIO_PIN              GPIO_Pin_10
-#define KEY1_G_GPIO_PORT             GPIOA
-#define KEY1_G_GPIO_CLK              RCC_APB2Periph_GPIOA
+#define KEY1_G_GPIO_PIN              GPIO_Pin_12
+#define KEY1_G_GPIO_PORT             GPIOB
+#define KEY1_G_GPIO_CLK              RCC_APB2Periph_GPIOB
 
 void KEY1_GPIO_Config(void);
 uint8_t Key1_Scan(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
