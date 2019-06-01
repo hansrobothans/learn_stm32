@@ -32,10 +32,10 @@ void LED_weidai_1_0(void)
 {
 	while(1)
 	{
-		PCout(13) = 1;
+		PDout(13) = 1;
 		Delay(0xFFFFF);
 		
-		PCout(13) = 0;
+		PDout(13) = 0;
 		Delay(0xFFFFF);
 	}
 }

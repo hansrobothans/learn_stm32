@@ -2,7 +2,7 @@
 
 
 
-static void GENERAL_TIM_GPIO_Config(void) 
+static void GENERAL_TIM_OUT_GPIO_Config(void) 
 {
   GPIO_InitTypeDef GPIO_InitStructure;
 
@@ -120,7 +120,7 @@ static void GENERAL_TIM_Mode_Config(void)
 
 void GENERAL_TIM_Init(void)
 {
-	GENERAL_TIM_GPIO_Config();
+	GENERAL_TIM_OUT_GPIO_Config();
 	GENERAL_TIM_Mode_Config();		
 }
 

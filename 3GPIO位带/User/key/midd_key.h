@@ -7,12 +7,12 @@
 #define KEY_ON 1
 #define KEY_OFF 0
 
-#define KEY1_G_GPIO_PIN              GPIO_Pin_12
-#define KEY1_G_GPIO_PORT             GPIOB
-#define KEY1_G_GPIO_CLK              RCC_APB2Periph_GPIOB
+#define KEY1_G_GPIO_PIN              GPIO_Pin_0
+#define KEY1_G_GPIO_PORT             GPIOA
+#define KEY1_G_GPIO_CLK              RCC_APB2Periph_GPIOA
 
-#define GPIOB_IDR_Addr (GPIOB_BASE+0X08)
-#define PBin(n)     *(unsigned int*)((GPIOB_IDR_Addr & 0xF0000000) + 0x02000000 + ((GPIOB_IDR_Addr & 0x00FFFFFF) << 5) +(n << 2))
+#define GPIOA_IDR_Addr (GPIOA_BASE+0X08)
+#define PAin(n)     *(unsigned int*)((GPIOA_IDR_Addr & 0xF0000000) + 0x02000000 + ((GPIOA_IDR_Addr & 0x00FFFFFF) << 5) +(n << 2))
 
 
 

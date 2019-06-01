@@ -1,5 +1,5 @@
 Dependencies for Project 'Fwlib_hans', Target 'Target 1': (DO NOT MODIFY !)
-F (..\Libraries\CMSIS\startup\startup_stm32f10x_md.s)(0x559784E0)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-I"E:\Programe File\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-I"E:\Programe File\ARM\CMSIS\Include"--pd "__UVISION_VERSION SETA 523" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
+F (..\Libraries\CMSIS\startup\startup_stm32f10x_hd.s)(0x559784E0)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-I"E:\Programe File\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-I"E:\Programe File\ARM\CMSIS\Include"--pd "__UVISION_VERSION SETA 523" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_hd.lst --xref -o .\objects\startup_stm32f10x_hd.o --depend .\objects\startup_stm32f10x_hd.d)
 F (..\Libraries\CMSIS\core_cm3.c)(0x559784E0)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\User -I ..\Libraries\CMSIS -I ..\User\led -I ..\User\key -I ..\User\delay-I.\RTE\_Target_1-I"E:\Programe File\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-I"E:\Programe File\ARM\CMSIS\Include"-D__UVISION_VERSION="523" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\core_cm3.o --omf_browse .\objects\core_cm3.crf --depend .\objects\core_cm3.d)
 I (E:\Programe File\ARM\ARMCC\include\stdint.h)(0x57F606B8)
 F (..\Libraries\CMSIS\system_stm32f10x.c)(0x559784E0)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\User -I ..\Libraries\CMSIS -I ..\User\led -I ..\User\key -I ..\User\delay-I.\RTE\_Target_1-I"E:\Programe File\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-I"E:\Programe File\ARM\CMSIS\Include"-D__UVISION_VERSION="523" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
@@ -727,9 +727,9 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x559784E0)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x559784E0)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x559784E0)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x559784E0)
-I (..\User\led\midd_led.h)(0x5CEA44EB)
+I (..\User\led\midd_led.h)(0x5CF20723)
 I (..\User\delay\midd_delay.h)(0x5CE96F85)
-I (..\User\key\midd_key.h)(0x5CEB234B)
+I (..\User\key\midd_key.h)(0x5CF20782)
 F (..\User\stm32f10x_it.c)(0x58953819)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\User -I ..\Libraries\CMSIS -I ..\User\led -I ..\User\key -I ..\User\delay-I.\RTE\_Target_1-I"E:\Programe File\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-I"E:\Programe File\ARM\CMSIS\Include"-D__UVISION_VERSION="523" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\stm32f10x_it.o --omf_browse .\objects\stm32f10x_it.crf --depend .\objects\stm32f10x_it.d)
 I (..\User\stm32f10x_it.h)(0x58953819)
 I (..\Libraries\CMSIS\stm32f10x.h)(0x559784E0)
@@ -760,8 +760,8 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x559784E0)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x559784E0)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x559784E0)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x559784E0)
-F (..\User\led\midd_led.c)(0x5CEA44EB)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\User -I ..\Libraries\CMSIS -I ..\User\led -I ..\User\key -I ..\User\delay-I.\RTE\_Target_1-I"E:\Programe File\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-I"E:\Programe File\ARM\CMSIS\Include"-D__UVISION_VERSION="523" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\midd_led.o --omf_browse .\objects\midd_led.crf --depend .\objects\midd_led.d)
-I (..\User\led\midd_led.h)(0x5CEA44EB)
+F (..\User\led\midd_led.c)(0x5CF20723)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\User -I ..\Libraries\CMSIS -I ..\User\led -I ..\User\key -I ..\User\delay-I.\RTE\_Target_1-I"E:\Programe File\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-I"E:\Programe File\ARM\CMSIS\Include"-D__UVISION_VERSION="523" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\midd_led.o --omf_browse .\objects\midd_led.crf --depend .\objects\midd_led.d)
+I (..\User\led\midd_led.h)(0x5CF20723)
 I (..\Libraries\CMSIS\stm32f10x.h)(0x559784E0)
 I (..\Libraries\CMSIS\core_cm3.h)(0x559784E0)
 I (E:\Programe File\ARM\ARMCC\include\stdint.h)(0x57F606B8)
@@ -791,8 +791,8 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x559784E0)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x559784E0)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x559784E0)
 I (..\User\delay\midd_delay.h)(0x5CE96F85)
-F (..\User\key\midd_key.c)(0x5CEB2413)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\User -I ..\Libraries\CMSIS -I ..\User\led -I ..\User\key -I ..\User\delay-I.\RTE\_Target_1-I"E:\Programe File\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-I"E:\Programe File\ARM\CMSIS\Include"-D__UVISION_VERSION="523" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\midd_key.o --omf_browse .\objects\midd_key.crf --depend .\objects\midd_key.d)
-I (..\User\key\midd_key.h)(0x5CEB234B)
+F (..\User\key\midd_key.c)(0x5CF20782)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Libraries\STM32F10x_StdPeriph_Driver\inc -I ..\User -I ..\Libraries\CMSIS -I ..\User\led -I ..\User\key -I ..\User\delay-I.\RTE\_Target_1-I"E:\Programe File\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-I"E:\Programe File\ARM\CMSIS\Include"-D__UVISION_VERSION="523" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o .\objects\midd_key.o --omf_browse .\objects\midd_key.crf --depend .\objects\midd_key.d)
+I (..\User\key\midd_key.h)(0x5CF20782)
 I (..\Libraries\CMSIS\stm32f10x.h)(0x559784E0)
 I (..\Libraries\CMSIS\core_cm3.h)(0x559784E0)
 I (E:\Programe File\ARM\ARMCC\include\stdint.h)(0x57F606B8)

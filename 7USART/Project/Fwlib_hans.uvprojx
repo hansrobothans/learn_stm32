@@ -378,13 +378,6 @@
       <Groups>
         <Group>
           <GroupName>STARTUP</GroupName>
-          <Files>
-            <File>
-              <FileName>startup_stm32f10x_md.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\Libraries\CMSIS\startup\startup_stm32f10x_md.s</FilePath>
-            </File>
-          </Files>
         </Group>
         <Group>
           <GroupName>CMSIS</GroupName>

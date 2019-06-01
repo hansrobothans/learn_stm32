@@ -1,5 +1,5 @@
 
-#include "bsp_tpad.h"
+#include "midd_tpad.h"
 
 // 电容按键空载的时候充电时间
 uint16_t tpad_default_val;

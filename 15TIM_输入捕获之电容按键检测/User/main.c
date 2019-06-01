@@ -1,10 +1,10 @@
 // TIM—通用-捕获-电容按键检测 应用
 #include "stm32f10x.h"
-#include "bsp_led.h"
-#include "bsp_usart.h"
-#include "bsp_tpad.h"  
-#include "bsp_SysTick.h"
-#include "bsp_beep.h"
+#include "midd_led.h"
+#include "midd_usart.h"
+#include "midd_tpad.h"  
+#include "midd_SysTick.h"
+#include "midd_beep.h"
 
 /**
   * @brief  主函数

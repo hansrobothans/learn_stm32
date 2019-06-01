@@ -1,10 +1,10 @@
-#ifndef __BSP_TPAD_H
-#define __BSP_TPAD_H
+#ifndef __MIDD_TPAD_H
+#define __MIDD_TPAD_H
 
 
 #include "stm32f10x.h"
-#include "bsp_SysTick.h"
-#include "bsp_usart.h"
+#include "midd_SysTick.h"
+#include "midd_usart.h"
 
 /************通用定时器TIM参数定义，只限TIM2、3、4、5************/
 // 当使用不同的定时器的时候，对应的GPIO是不一样的，这点要注意
@@ -46,6 +46,6 @@
 uint8_t TPAD_Init(void);
 uint8_t TPAD_Scan(void);
 
-#endif	/* __BSP_TPAD_H */
+#endif	/* __MIDD_TPAD_H */
 
 

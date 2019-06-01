@@ -10,6 +10,7 @@
       <TargetName>TIM—输入捕获-电容按键检测</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F103ZE</Device>
@@ -559,29 +560,29 @@
               <FilePath>..\..\User\stm32f10x_it.h</FilePath>
             </File>
             <File>
-              <FileName>bsp_led.c</FileName>
+              <FileName>midd_beep.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\User\Led\bsp_led.c</FilePath>
+              <FilePath>..\..\User\Beep\midd_beep.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_usart.c</FileName>
+              <FileName>midd_led.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\User\usart\bsp_usart.c</FilePath>
+              <FilePath>..\..\User\Led\midd_led.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_tpad.c</FileName>
+              <FileName>midd_SysTick.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\User\TPad\bsp_tpad.c</FilePath>
+              <FilePath>..\..\User\SysTick\midd_SysTick.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_SysTick.c</FileName>
+              <FileName>midd_tpad.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\User\SysTick\bsp_SysTick.c</FilePath>
+              <FilePath>..\..\User\TPad\midd_tpad.c</FilePath>
             </File>
             <File>
-              <FileName>bsp_beep.c</FileName>
+              <FileName>midd_usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\User\Beep\bsp_beep.c</FilePath>
+              <FilePath>..\..\User\usart\midd_usart.c</FilePath>
             </File>
           </Files>
         </Group>

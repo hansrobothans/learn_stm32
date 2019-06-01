@@ -28,12 +28,12 @@ uint8_t Key1_Scan(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
 }
 
 
-uint8_t Key1_Scan_weidai(uint16_t PB_n)
+uint8_t Key1_Scan_weidai(uint16_t PA_n)
 {
-	if( PBin(PB_n)  == KEY_ON)
+	if( PAin(PA_n)  == KEY_ON)
 	{
 		//À… ÷ºÏ≤‚
-		while(PBin(PB_n)  == KEY_ON);
+		while(PAin(PA_n)  == KEY_ON);
 		return KEY_ON;
 	}
 	else 
