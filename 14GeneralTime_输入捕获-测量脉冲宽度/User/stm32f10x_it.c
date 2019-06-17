@@ -144,10 +144,14 @@ void GENERAL_TIM_INT_FUN(void)
 {
 	// 当要被捕获的信号的周期大于定时器的最长定时时，定时器就会溢出，产生更新中断
 	// 这个时候我们需要把这个最长的定时周期加到捕获信号的时间里面去
-	if ( TIM_GetITStatus ( GENERAL_TIM, TIM_IT_Update) != RESET )               
+	
+	//判断是不是更新中断
+	if ( TIM_GetITStatus( GENERAL_TIM, TIM_IT_Update) != RESET )               
 	{	
-		TIM_ICUserValueStructure.Capture_Period ++;		
-		TIM_ClearITPendingBit ( GENERAL_TIM, TIM_FLAG_Update ); 		
+		//如果是计数加一
+		TIM_ICUserValueStructure.Capture_Period ++;
+		//清楚更新中断标志位
+		TIM_ClearITPendingBit( GENERAL_TIM, TIM_FLAG_Update ); 		
 	}
 
 	// 上升沿捕获中断
@@ -156,6 +160,7 @@ void GENERAL_TIM_INT_FUN(void)
 		// 第一次捕获
 		if ( TIM_ICUserValueStructure.Capture_StartFlag == 0 )
 		{
+			TIM_ICUserValueStructure.Capture_FinishFlag = 0;
 			// 计数器清0
 			TIM_SetCounter ( GENERAL_TIM, 0 );
 			// 自动重装载寄存器更新标志清0

@@ -81,10 +81,10 @@ static void GENERAL_TIM_Mode_Config(void)
 
 	/*--------------------输出比较结构体初始化-------------------*/	
 	// 占空比配置
-	uint16_t CCR1_Val = 5;
-	uint16_t CCR2_Val = 4;
-	uint16_t CCR3_Val = 3;
-	uint16_t CCR4_Val = 2;
+	uint16_t CCR1_Val = 200;
+	uint16_t CCR2_Val = 200;
+	uint16_t CCR3_Val = 200;
+	uint16_t CCR4_Val = 200;
 	
 	TIM_OCInitTypeDef  TIM_OCInitStructure;
 	// 配置为PWM模式1

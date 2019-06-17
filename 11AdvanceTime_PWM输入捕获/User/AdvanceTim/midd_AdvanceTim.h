@@ -14,7 +14,7 @@
 #define            ADVANCE_TIM_CLK               RCC_APB2Periph_TIM1
 
 // 输入捕获能捕获到的最小的频率为 72M/{ (ARR+1)*(PSC+1) }
-#define            ADVANCE_TIM_PERIOD            (1000-1)
+#define            ADVANCE_TIM_PERIOD            (1000-1)//ARR
 #define            ADVANCE_TIM_PSC               (72-1)
 
 // 中断相关宏定义

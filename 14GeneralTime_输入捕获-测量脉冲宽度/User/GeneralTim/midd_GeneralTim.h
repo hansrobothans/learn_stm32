@@ -11,7 +11,7 @@
 #define            GENERAL_TIM                   TIM5
 #define            GENERAL_TIM_APBxClock_FUN     RCC_APB1PeriphClockCmd
 #define            GENERAL_TIM_CLK               RCC_APB1Periph_TIM5
-#define            GENERAL_TIM_Period            0XFFFF
+#define            GENERAL_TIM_Period            (1000-1)	//ARR
 #define            GENERAL_TIM_Prescaler         (72-1)
 
 // TIM5 输出比较通道1
@@ -79,7 +79,7 @@
 //#define            GENERAL_TIM_OCxPolarityConfig_FUN           TIM_OC2PolarityConfig
 #define            GENERAL_TIM_OCxPolarityConfig_FUN           TIM_OC3PolarityConfig
 //#define            GENERAL_TIM_OCxPolarityConfig_FUN           TIM_OC4PolarityConfig
-
+ 
 // 测量的起始边沿
 #define            GENERAL_TIM_STRAT_ICPolarity                TIM_ICPolarity_Rising
 // 测量的结束边沿

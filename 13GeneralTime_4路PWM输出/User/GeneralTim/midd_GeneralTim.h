@@ -12,7 +12,7 @@
 #define            GENERAL_TIM                   TIM5
 #define            GENERAL_TIM_APBxClock_FUN     RCC_APB1PeriphClockCmd
 #define            GENERAL_TIM_CLK               RCC_APB1Periph_TIM5
-#define            GENERAL_TIM_Period            (10 - 1)
+#define            GENERAL_TIM_Period            (500 - 1)
 #define            GENERAL_TIM_Prescaler         (72 - 1)
 // TIM3 输出比较通道1
 #define            GENERAL_TIM_CH1_GPIO_CLK      RCC_APB2Periph_GPIOA

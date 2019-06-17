@@ -26,9 +26,11 @@ int main(void)
 			// 计算高电平时间的计数器的值
 			time = TIM_ICUserValueStructure.Capture_Period * (GENERAL_TIM_Period+1) + 
 			       (TIM_ICUserValueStructure.Capture_CcrValue+1);
-			
+
+
+			printf ( "\r\n time：%d \r\n TIM_PscCLK: %d \r\n",time,TIM_PscCLK);			
 			// 打印高电平脉宽时间
-			printf ( "\r\n测得高电平脉宽时间：%d.%d s\r\n",time/TIM_PscCLK,time%TIM_PscCLK );
+			printf ( "\r\n测得高电平脉宽时间：%d.%d ms\r\n",time/TIM_PscCLK,time%TIM_PscCLK );
 			
 			TIM_ICUserValueStructure.Capture_FinishFlag = 0;			
 	

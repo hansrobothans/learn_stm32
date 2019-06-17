@@ -46,9 +46,6 @@ static void GENERAL_TIM_IN_GPIO_Config(void)
 //  GPIO_InitStructure.GPIO_Pin =  GENERAL_TIM_CH4_PIN;
 //  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
 //  GPIO_Init(GENERAL_TIM_CH4_PORT, &GPIO_InitStructure);	
-	
-	
-	
 }
 
 static void GENERAL_TIM_OUT_GPIO_Config(void) 
@@ -114,7 +111,7 @@ static void GENERAL_TIM_Mode_Config(void)
 /*--------------------时基结构体初始化-------------------------*/	
   TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
 	// 自动重装载寄存器的值，累计TIM_Period+1个频率后产生一个更新或者中断
-	TIM_TimeBaseStructure.TIM_Period=GENERAL_TIM_Period;	
+	TIM_TimeBaseStructure.TIM_Period=GENERAL_TIM_Period+1;	
 	// 驱动CNT计数器的时钟 = Fck_int/(psc+1)
 	TIM_TimeBaseStructure.TIM_Prescaler= GENERAL_TIM_Prescaler;	
 	// 时钟分频因子 ，配置死区时间时需要用到
@@ -128,10 +125,10 @@ static void GENERAL_TIM_Mode_Config(void)
 
 	/*--------------------输出比较结构体初始化-------------------*/	
 	// 占空比配置
-	uint16_t CCR1_Val = 6-1;
-	uint16_t CCR2_Val = 5-1;
-	uint16_t CCR3_Val = 4-1;
-	uint16_t CCR4_Val = 3-1;
+	uint16_t CCR1_Val = 531-1;
+	uint16_t CCR2_Val = 400-1;
+	uint16_t CCR3_Val = 300-1;
+	uint16_t CCR4_Val = 200-1;
 	
 	TIM_OCInitTypeDef  TIM_OCInitStructure;
 	// 配置为PWM模式1

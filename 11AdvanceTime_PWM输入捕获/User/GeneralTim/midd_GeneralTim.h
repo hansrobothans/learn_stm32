@@ -13,7 +13,7 @@
 #define            GENERAL_TIM_APBxClock_FUN     RCC_APB1PeriphClockCmd
 #define            GENERAL_TIM_CLK               RCC_APB1Periph_TIM3
 // 输出PWM的频率为 72M/{ (ARR+1)*(PSC+1) }
-#define            GENERAL_TIM_PERIOD            (10-1)
+#define            GENERAL_TIM_PERIOD            (10-1)	//ARR的值
 #define            GENERAL_TIM_PSC               (72-1)
 
 #define            GENERAL_TIM_CCR1              5
