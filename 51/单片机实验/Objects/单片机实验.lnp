@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\main.obj" 
+TO ".\Objects\单片机实验" 
+PRINT(".\Listings\单片机实验.m51") RAMSIZE(256) 

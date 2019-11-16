@@ -2,7 +2,7 @@
 .\objects\midd_delay.o: ..\User\delay\midd_delay.h
 .\objects\midd_delay.o: ..\Libraries\CMSIS\stm32f10x.h
 .\objects\midd_delay.o: ..\Libraries\CMSIS\core_cm3.h
-.\objects\midd_delay.o: E:\Programe File\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\midd_delay.o: E:\program file\keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\midd_delay.o: ..\Libraries\CMSIS\system_stm32f10x.h
 .\objects\midd_delay.o: ..\User\stm32f10x_conf.h
 .\objects\midd_delay.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h

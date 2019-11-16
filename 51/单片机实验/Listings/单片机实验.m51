@@ -1,0 +1,163 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/14/2019  21:44:52  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+E:\PROGRAM FILE\KEIL4\C51\BIN\BL51.EXE .\Objects\STARTUP.obj, .\Objects\main.obj TO .\Objects\单片机实验 PRINT (.\Listin
+>> gs\单片机实验.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\STARTUP.obj (?C_STARTUP)
+  .\Objects\main.obj (MAIN)
+  E:\PROGRAM FILE\KEIL4\C51\LIB\C51S.LIB (?C?COPY)
+
+
+LINK MAP OF MODULE:  .\Objects\单片机实验 (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0012H     UNIT         _DATA_GROUP_
+            IDATA   001AH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     00F6H     UNIT         ?C?LIB_CODE
+            CODE    08F6H     0038H     UNIT         ?PR?_LSD?MAIN
+            CODE    092EH     0017H     UNIT         ?PR?_DELAY_MS?MAIN
+            CODE    0945H     0010H     UNIT         ?CO?MAIN
+            CODE    0955H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0961H     0007H     UNIT         ?PR?MAIN?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\单片机实验 (?C_STARTUP)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN                  -----    -----
+  +--> ?PR?_LSD?MAIN
+
+?PR?_LSD?MAIN                  0008H    0012H
+  +--> ?CO?MAIN
+  +--> ?PR?_DELAY_MS?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\单片机实验 (?C_STARTUP)
+
+  VALUE           TYPE          NAME
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/14/2019  21:44:52  PAGE 2
+
+
+  ----------------------------------
+
+  -------         MODULE        ?C_STARTUP
+  C:0955H         SEGMENT       ?C_C51STARTUP
+  I:001AH         SEGMENT       ?STACK
+  C:0000H         PUBLIC        ?C_STARTUP
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0080H         SYMBOL        IDATALEN
+  C:0958H         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0100H         SYMBOL        PBPSTACKTOP
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+  D:0081H         SYMBOL        SP
+  C:0955H         SYMBOL        STARTUP1
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:0000H         LINE#         126
+  C:0955H         LINE#         133
+  C:0957H         LINE#         134
+  C:0958H         LINE#         135
+  C:0959H         LINE#         136
+  C:095BH         LINE#         185
+  C:095EH         LINE#         196
+  -------         ENDMOD        ?C_STARTUP
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  C:0961H         PUBLIC        main
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:0945H         SYMBOL        _?ix1000
+  C:08F6H         PUBLIC        _lsd
+  C:092EH         PUBLIC        _delay_ms
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        t
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:092EH         LINE#         6
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/14/2019  21:44:52  PAGE 3
+
+
+  C:092EH         LINE#         7
+  C:092EH         LINE#         9
+  C:0932H         LINE#         11
+  C:0944H         LINE#         12
+  -------         ENDPROC       _DELAY_MS
+  -------         PROC          _LSD
+  D:0008H         SYMBOL        t
+  -------         DO            
+  D:000AH         SYMBOL        led_m
+  D:0004H         SYMBOL        i
+  -------         ENDDO         
+  C:08F6H         LINE#         14
+  C:08FAH         LINE#         15
+  C:08FAH         LINE#         16
+  C:090DH         LINE#         17
+  C:090DH         LINE#         18
+  C:090DH         LINE#         19
+  C:0910H         LINE#         20
+  C:0910H         LINE#         21
+  C:091AH         LINE#         22
+  C:0921H         LINE#         23
+  -------         ENDPROC       _LSD
+  -------         PROC          MAIN
+  C:0961H         LINE#         5
+  C:0961H         LINE#         6
+  C:0961H         LINE#         7
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        ?C?COPY
+  C:08D0H         PUBLIC        ?C?COPY
+  -------         ENDMOD        ?C?COPY
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0075H BYTE ( 5%) *
+******************************************************************************
+
+Program Size: data=27.0 xdata=0 code=363
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

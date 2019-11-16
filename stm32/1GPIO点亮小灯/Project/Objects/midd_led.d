@@ -2,7 +2,7 @@
 .\objects\midd_led.o: ..\User\led\midd_led.h
 .\objects\midd_led.o: ..\Libraries\CMSIS\stm32f10x.h
 .\objects\midd_led.o: ..\Libraries\CMSIS\core_cm3.h
-.\objects\midd_led.o: E:\Programe File\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\midd_led.o: E:\program file\keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\midd_led.o: ..\Libraries\CMSIS\system_stm32f10x.h
 .\objects\midd_led.o: ..\User\stm32f10x_conf.h
 .\objects\midd_led.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
